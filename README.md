@@ -7,8 +7,7 @@ Below are my notes, filled with essential information, and the learnings I've ga
 ## Useful Links
 - [C++ Reference (cppreference.com)](https://en.cppreference.com/)
 - [C++ Library Reference (cplusplus.com)](https://cplusplus.com/reference/)
-Great book :
-- C++ Primer
+- Great book: C++ Primer
 
 ## An introduction to C++ and OOP
 
