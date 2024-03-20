@@ -1,14 +1,20 @@
 # C++ Pool - 42
 
-This repo contains all execises on Object-Oriented Programming (OOP) and its application, using C++. 
-This is structured into modules, each diving into different aspects of programming from basic to advanced levels, including, among others,  the use of containers, implementation of classes and inheritance, understanding polymorphism, and utilizing iterators and implementing alogrithm.
-Here are some of my notes, taken updon discovery and learning.
+This repository houses a comprehensive collection of exercises focused on Object-Oriented Programming (OOP) and its practical applications in C++. It is organized into modules that cover a range of programming concepts from foundational to advanced. Key areas of exploration include container utilization, class creation and inheritance mechanisms, polymorphism comprehension, iterator usage, and algorithm implementation. 
+
+Included are various notes reflecting insights, key-informations and learnings gathered throughout the discovery and study process
+
+useful links: 
+- https://en.cppreference.com/
+- https://cplusplus.com/reference/
+
+## A Introduction to C++ and OOP
 
 - Different than **procedural programming →** can lead to *spaghetti code*, harder to maintain and expand, lot of function parameters
 - Combines related variables and functions into an **object**
     - variables = **properties**
     - functions = **methods**
-
+    - 
 ---
 
 ## 4 Pillars
