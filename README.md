@@ -15,7 +15,7 @@ Below are my notes, filled with essential information, and the learnings I've ga
 - Combines related variables and functions into an **object**
     - variables = **properties**
     - functions = **methods**
-    - 
+      
 ---
 
 ## 4 Pillars
@@ -635,11 +635,11 @@ Most containers have at least several member functions in common, and share func
 
 Sequence containers implement data structures which can be accessed sequentially.
 
-| https://en.cppreference.com/w/cpp/container/array(C++11) | static contiguous array  (class template) |
+| https://en.cppreference.com/w/cpp/container/array | static contiguous array  (class template) |
 | --- | --- |
 | https://en.cppreference.com/w/cpp/container/vector | dynamic contiguous array  (class template) |
 | https://en.cppreference.com/w/cpp/container/deque | double-ended queue  (class template) |
-| https://en.cppreference.com/w/cpp/container/forward_list(C++11) | singly-linked list  (class template) |
+| https://en.cppreference.com/w/cpp/container/forward_list | singly-linked list  (class template) |
 | https://en.cppreference.com/w/cpp/container/list | doubly-linked list  (class template) |
 
 ### Associative containers
