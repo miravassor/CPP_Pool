@@ -631,30 +631,30 @@ The container manages the storage space that is allocated for its elements and *
 
 Most containers have at least several member functions in common, and share functionalities. Which container is the best for the particular application depends not only on the offered functionality, but also on its efficiency for different workloads.
 
-### Sequence containers
+### Sequence Containers
 
 Sequence containers implement data structures which can be accessed sequentially.
 
-| https://en.cppreference.com/w/cpp/container/array | static contiguous array  (class template) |
+| Container | Description |
 | --- | --- |
-| https://en.cppreference.com/w/cpp/container/vector | dynamic contiguous array  (class template) |
-| https://en.cppreference.com/w/cpp/container/deque | double-ended queue  (class template) |
-| https://en.cppreference.com/w/cpp/container/forward_list | singly-linked list  (class template) |
-| https://en.cppreference.com/w/cpp/container/list | doubly-linked list  (class template) |
+| [array (cppreference.com)](https://en.cppreference.com/w/cpp/container/array) | static contiguous array (class template) |
+| [vector (cppreference.com)](https://en.cppreference.com/w/cpp/container/vector) | dynamic contiguous array (class template) |
+| [deque (cppreference.com)](https://en.cppreference.com/w/cpp/container/deque) | double-ended queue (class template) |
+| [forward_list (cppreference.com)](https://en.cppreference.com/w/cpp/container/forward_list) | singly-linked list (class template) |
+| [list (cppreference.com)](https://en.cppreference.com/w/cpp/container/list) | doubly-linked list (class template) |
 
-### Associative containers
+### Associative Containers
 
-Associative containers implement sorted data structures that can be quickly searched 
+Associative containers implement sorted data structures that can be quickly searched (*O(log n)* complexity).
 
-(*O(log n)* complexity).
-
-| https://en.cppreference.com/w/cpp/container/set | collection of unique keys, sorted by keys  (class template) |
+| Container | Description |
 | --- | --- |
-| https://en.cppreference.com/w/cpp/container/map | collection of key-value pairs, sorted by keys, keys are unique  (class template) |
-| https://en.cppreference.com/w/cpp/container/multiset | collection of keys, sorted by keys  (class template) |
-| https://en.cppreference.com/w/cpp/container/multimap | collection of key-value pairs, sorted by keys  (class template) |
+| [set (cppreference.com)](https://en.cppreference.com/w/cpp/container/set) | collection of unique keys, sorted by keys (class template) |
+| [map (cppreference.com)](https://en.cppreference.com/w/cpp/container/map) | collection of key-value pairs, sorted by keys, keys are unique (class template) |
+| [multiset (cppreference.com)](https://en.cppreference.com/w/cpp/container/multiset) | collection of keys, sorted by keys (class template) |
+| [multimap (cppreference.com)](https://en.cppreference.com/w/cpp/container/multimap) | collection of key-value pairs, sorted by keys (class template) |
 
----
+--- 
 
 ### Iterators
 
