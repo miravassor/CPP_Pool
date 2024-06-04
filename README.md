@@ -281,7 +281,7 @@ HI THIS IS BRAIN
 Returning `*this` instead of `this` in the assignment operator is an important convention in C++ that relates to the types involved and how they are used in expressions.
 
 - `this` is a pointer to the current object. 
-- `this` is a reference to the current object itself.
+- `*this` is a reference to the current object itself.
 
 The reason you return `*this` (a reference) rather than `this` (a pointer) is to enable the natural and expected usage of assignment in C++ expressions. When you write code like `a = b = c;`, you're relying on the assignment operator to return a reference to the left-hand object (`a` and `b` in this case), not a pointer. This allows the assignment to chain naturally, as each assignment operation returns a reference to the object it just assigned to, which then becomes the left-hand operand of the next assignment.
 
