@@ -48,7 +48,7 @@ Below are my notes, filled with essential information, and the learnings I've ga
 - Allow for inherited objects to define or add unique behavior to the base object
 - Eliminate if/else forest and redundant anesthetic switch cases with simple code :
     
-    ```jsx
+    ```cpp
     object.execute() // will work for every object
     ```
     
@@ -153,7 +153,7 @@ Span& Span::operator=(const Span &rhs) {
 ```cpp
 std::ostream&   operator<<(std::ostream& *out*, const Class& obj);
 bool operator>(const Fixed &rhs) const;
-bool operator<(const Fixed &rhs)const;
+bool operator<(const Fixed &rhs) const;
 bool operator>=(const Fixed &rhs) const;
 bool operator<=(const Fixed &rhs) const;
 bool operator==(const Fixed &rhs) const;
@@ -335,12 +335,11 @@ int value = ref; // Accessing the value through a reference
 - `private`: Accessible only within the class it's defined. Not child!
 - `public`: Accessible from anywhere the object is visible.
 - `protected`: Middle ground, adds the ability for child classes to access.
-        - **Access Level**:
-            - **Within the Class**: Same as `private`, can use directly.
-            - **In Derived Classes**: Can access `protected` members of the base class.
-            - **Outside the Class**: Can't access, similar to `private`.
-            
-            Useful for *inheritance*. Allows child classes to use and modify these members, which are hidden from the rest of the program
+- ** Protected Access Level**:
+	- **Within the Class**: Same as `private`, can use directly.
+	- **In Derived Classes**: Can access `protected` members of the base class.
+	- **Outside the Class**: Can't access, similar to `private`.
+Useful for *inheritance*. Allows child classes to use and modify these members, which are hidden from the rest of the program
             
 
 ---
