@@ -55,18 +55,6 @@ Below are my notes, filled with essential information, and the learnings I've ga
 
 ---
 
-### Benefits
-
-**Encapsulation** → by grouping properties and methods in one object we reduce complexity and increase re-usability
-
-**Abstraction →** also reduce complexity and reduce impact of changes in the code 
-
-**Inheritance** → reduce redundant code
-
-**Polymorphism** → prettier straight-forward code
-
----
-
 ### Implementations
 
 - **Separation of Interface and Implementation**:
@@ -288,12 +276,12 @@ HI THIS IS BRAIN
 
 ### Returning *this (reference convention)
 
-*why do i need to return the *this and not this ?*
+*why do i need to return the `*this` and not `this` ?*
 
 Returning `*this` instead of `this` in the assignment operator is an important convention in C++ that relates to the types involved and how they are used in expressions.
 
-- `this` is a pointer to the current object. It's of type `Span*` in your case (a pointer to `Span`).
-- `this` is a reference to the current object itself. It's of type `Span&` (a reference to `Span`).
+- `this` is a pointer to the current object. 
+- `this` is a reference to the current object itself.
 
 The reason you return `*this` (a reference) rather than `this` (a pointer) is to enable the natural and expected usage of assignment in C++ expressions. When you write code like `a = b = c;`, you're relying on the assignment operator to return a reference to the left-hand object (`a` and `b` in this case), not a pointer. This allows the assignment to chain naturally, as each assignment operation returns a reference to the object it just assigned to, which then becomes the left-hand operand of the next assignment.
 
@@ -347,8 +335,6 @@ int value = ref; // Accessing the value through a reference
 - `private`: Accessible only within the class it's defined. Not child!
 - `public`: Accessible from anywhere the object is visible.
 - `protected`: Middle ground, adds the ability for child classes to access.
-    - `protected` makes class members accessible within the class itself and by derived (child) classes but not by other parts
-        - Put `protected` before class members (variables, functions) in a class definition
         - **Access Level**:
             - **Within the Class**: Same as `private`, can use directly.
             - **In Derived Classes**: Can access `protected` members of the base class.
@@ -388,6 +374,7 @@ int value = ref; // Accessing the value through a reference
     - Shared by all instances of the class.
     - Initialized once and retain their value between function calls.
     - Usage: Useful for values that should be shared across all instances, like counters or global settings within the class context.
+      
 - **Static Member Functions**:
     - Syntax: `static ReturnType FunctionName(Parameters);`
     - Also belong to the class rather than any object instance.
@@ -517,7 +504,7 @@ try {
         // do stuff
 }
 catch (const std::exception &e) {
-			// if stuff fails
+	// if stuff fails
     std::cerr << e.what() << std::endl;
 }
 ```
@@ -621,7 +608,7 @@ void	iter(T *add, U size, V fp) {
 
 The Containers library is a generic collection of class templates and algorithms that allow programmers to easily implement common data structures like queues, lists and stacks
 
-There are two(until C++11)three(since C++11) classes of containers:
+There are two (until C++11), now three (since C++11) classes of containers:
 
 - sequence containers
 - associative containers
@@ -665,6 +652,7 @@ standard containers provide various types of iterators to enable different ways 
 **`const_iterator`**: Similar to `iterator` but provides read-only access to the container's elements
 
 **`reverse_iterator`**: This is an iterator that moves backward through the container (from the end to the beginning). 
+
 **`const_reverse_iterator`**
 
 **5 types of iterators** *(defined in Standard Template Library)*
